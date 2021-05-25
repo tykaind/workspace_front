@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 이웹이 한글로 작성되었다고 선언-->
+
+    <head>
+        <meta charset="utf-8"><!-- 브라우저에서 한글해석 할때 utf-8 방식으로 해석해라 -->
+        <title>html5</title>
+        <style>
+            input {font-size: 50px;}
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <form action="전송할곳" method="get">
+            <label for="uid">아이디</label> <!-- 라벨태그를사용해야 아이디글씨를눌러야 체크됨 -->
+            <input type="test" id="uid" name="userid" value="" placeholder="아이디"> <br>
+
+            <label for="upw">비빌번호</label>
+            <input type="password" id="upw" name="userpw" value="" placeholder="비빌번호"> <br>
+
+            <label for="file">프사</label>
+            <input type="file" id="file" value=""><br>
+
+            <label for="apple">사과</label>
+            <input id="apple" type="radio" name="rdo" value="사과" checked><br>
+
+            <label for="gr">포도</label>
+            <input id="gr" type="radio" name="rdo" value="포도"><br>
+
+            <label for="org">오렌지</label>
+            <input id="org" type="radio" name="rdo" value="오렌지"><br><br><br>
+
+            <label for="1">1월</label>
+            <input type="radio" id="1" name="-" value="1" checked><br>
+
+            <label for="2">2월</label>
+            <input type="radio" id="2" name="-" value="2"><br>
+
+            <label for="3">3월</label>
+            <input type="radio" id="3" name="-" value="3"><br>
+
+            <button type="submit"> 전송 </button>
+            <button type="reset">초기화</button><br>
+
+            <input type="hidden" name="code" value="히든패시브">
+
+            <br><hr><br>
+
+            <label for="chk-book">독서</label>
+            <input type="checkbox" id="chk-book" value="book" name="chk"><br>
+
+            <label for="chk-music">음악</label>
+            <input type="checkbox" id="chk-music" value="music" name="chk"><br>
+
+            <label for="chk-trip">여행</label>
+            <input type="checkbox" id="chk-trip" value="trip" name="chk"><br><br><br>
+
+            <label for="chk-dog">강아지</label>
+            <input type="checkbox" id="chk-dog" name="zoo" value="dog"><br>
+
+            <label for="chk-cat">고양이</label>
+            <input type="checkbox" id="chk-cat" name="zoo" value="cat" checked><br>
+
+            <label for="chk-bird">새&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" id="chk-bird" name="zoo" value="bird"><br><br>
+
+            <hr>
+
+
+            <select name="telecom">
+                <option value="">통신사선택</option>
+                <option value="sk">SKT</option>
+                <option value="kt">KT</option>
+                <option value="lg">LGU+</option>
+                <option value="et" selected>기타</option>
+            </select>
+            <label for="are-content">본문</label>
+            <textarea id="are-content" name="content"></textarea>
+
+
+
+
+        </form>
+
+    </body>
+
+
+</html>

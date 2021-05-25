@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+
+            .box-blue {
+                background-color: #0000ff;
+                width: 700px;
+                height: 80px;
+            }
+
+            .box-red {
+                background-color: #f00;
+                width: 500px;
+                height: 60px;
+            }
+
+            .span-red {
+                background-color: #f00;
+                display: inline-block;
+                width: 150px;
+                height: 100px;
+            }
+
+            .span-blue {
+                background-color: #00f;
+                display: inline-block;
+                width: 150px;
+                height: 100px;
+            }
+
+            .in-b {
+                background-color: #ff00ff;
+                width: 150px;
+                height: 100px;
+                display: inline-block; /* a태그 때문에 줬을때 a태그는 인라인요소였다. */
+              }
+
+        </style>
+    </head>
+
+    <body>
+        <p class="box-blue">
+
+            css에서 p태그 가로 세로 어떻게 적용되는지 확인해 보겠습니다.
+
+        </p>
+
+        <div class="box-red">
+            css에서 div태그 가로 세로 어떻게 적용되는지 확인해 보겠습니다.
+        </div>
+
+        <span class="span-red"> 스펜1 </span>
+
+        <span class="span-blue"> 스펜1 </span>
+        
+        <img src="./img/jung.jpg" class="box-blue">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <input type="text" class="in-b">
+        <button class="in-b">저장</button> 
+        <a href="https://naver.com" class="in-b">네이버</a> <!-- inline -->
+
+
+        <br>
+        <br>
+        <br>
+
+    </body>
+
+</html>

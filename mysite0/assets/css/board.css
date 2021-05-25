@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* 초기 마진 패딩값초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0px;
+    padding: 0px;
+    font-family: "맑은 고딕", "돋음";
+    font-size: 12px;
+}
+
+.form-group {
+    padding: 5px 0px 5px 0px;
+}
+
+.form-txt {
+    display: inline-block;
+    width: 80px;
+}
+
+.txt-add {
+    margin: 5px 0px 0px 84px;
+    width: 400px;
+}
+
+textarea {
+    width: 400px;
+    height: 60px;
+}
+
+form>div {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+div[class="btn-area"]>button {
+    width: 70px;
+    padding: 3px 3px 3px 3px;
+    background-color: #fff;
+}
+
+.btn-area {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
+    border: 0px solid #e6e6e6;
+    text-align: center;
+}
+
+.txt-1 {
+    float: left;
+}

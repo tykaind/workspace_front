@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+
+body {
+    font-family: "맑은 고딕", "돋음";
+    font-size: 12px;
+}
+
+ol,ul {
+    list-style-type: none;
+}
+
+
+/* 링크관련 선언문 */
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+a:active{
+    text-decoration: none;
+    color: #000;
+}
+
+/* 레이아웃 */
+#wrap {width: 1000px;margin: 0px auto;}
+#header {
+    border-bottom:  1px solid #bfbfbf;
+    padding: 0px 0px 10px 0px;
+    }
+#nav {
+    background-color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+/* 전체화면 */
+#full-content {
+    padding: 15px 10px 15px 10px;
+}
+/* 2단화면 */
+#content {
+    padding: 15px 0px 15px 0px;
+}
+
+
+#footer {
+    background-color: #ddd;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+
+
+
+/*     헤더      */
+
+/* 로고 */
+#header h1>a {
+    font-size: 35px;
+    color: #79b30b;
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+
+#header ul {
+    float: right;
+    margin: 10px 0px 0px 0px;
+}
+
+#header ul>li {
+    float: left;
+    margin: 0px 1px 0px 10px;
+    border: 1px solid #ffcc00;
+    background-color: #ffff00;
+    padding: 3px 4px 3px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+/*********** 네비**********/
+#nav ul>li {
+    width: 249px;
+    float: left;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #bfbfbf;
+}
+
+#nav ul>li.list {
+    border-right: none;
+}
+
+/************* 컨텐츠 ***********/
+            /* 메인 */
+#full-content #profile-img {
+    width: 300px;
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+#full-content #greetings {
+    float: left;
+}
+
+#full-content #greetings #greet {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+}
+
+#full-content #greetings #desc {
+    font-size: 15px;
+}
+
+/********* 컨텐츠 게시판 **********/
+#content #aside {
+    float: left;
+    width: 180px;
+    margin: 0px 20px 0px 0px;
+}
+
+#content #aside h2{
+    padding: 20px 15px 20px 15px;
+    background-color: #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+#content #aside ul>li{
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #a6a6a6;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    text-align: left
+}
+/**** 메인영역 ****/
+#content #main {
+    float: left;
+    width: 800px;
+}
+
+#content #main-head {
+    border-bottom: 1px solid #a6a6a6;
+    margin: 0px 0px 20px 0px;
+}
+#content #main #main-head h3{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+}
+
+#content #main #main-head ul{
+    float: right;
+}
+
+#content #main #main-head ul>li{
+    float: left;
+    font-size: 15px;
+    margin: 25px 0px 0px 0px;
+}
+
+#content #main #main-head ul>li::after{
+    content: " > ";
+}
+
+#content #main #main-head ul>li.last::after {
+    content: none;
+}
+
+#board #search-area form input[type="text"] {
+    width: 150px;
+    height: 25px;
+}
+
+#board #search-area form button {
+    padding: 3px 5px 3px 5px;
+}
+
+#board #search-area form {
+    float: right;
+}
+
+
+#table table {
+    margin: 10px 0px 0px 0px;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#table table thead {
+    background-color: #dddddd;
+}
+
+#table table thead tr>td{
+    border-top: 1px solid #000;
+    border-bottom: 1px dotted #000;
+    border-left: none;
+    border-right: none;
+}
+
+#table table tbody tr>td {
+    border-bottom: 1px dotted #000;
+}
+
+#board-rr {
+    border-bottom: 1px solid #000;
+}
+
+페이징
+/* #board #pager {
+    text-align: center;
+} */
+
+#board #pager ol {
+    width: 160px;
+/*     display: inline-block; */
+    margin: 0 auto;
+}
+
+#board #pager ol>li {
+    float: left;
+    margin: 3px 5px 0px 0px;
+    
+}
+
+#board #pager ol>li>a.active {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+}
+
+#board #pager #btn-write {
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #808080;
+    background-color: #dddddd;
+    border-radius: 2px;
+    margin: 5px 5px 0px 0px;
+}
+
+#app {
+    float: left;
+}

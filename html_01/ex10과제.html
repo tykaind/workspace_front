@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html5</title>
+        <link rel="stylesheet" href="./css/board2.css">
+    </head>
+
+    <body>
+        <div>
+        <form action="전송할곳" method="get">
+
+            <!-- 아이디 -->
+            <div class="form-group">
+                <label for="user_id" class="form-txt">아이디</label>
+                <input type="text" id="user_id" name="user_id" value="" placeholder="아이디를 입력하세요.">
+            </div>
+
+
+            <!-- 패스워드 -->
+            <div class="form-group">
+                <label for="user_pw" class="form-txt">비밀번호</label>
+                <input type="text" id="user_pw" name="user_pw" value="" placeholder="패스워드를 입력하세요.">
+            </div>
+
+
+            <!-- 이름 -->
+            <div class="form-group">
+                <label for="user_name" class="form-txt">이름</label>
+                <input type="text" id="user_name" name="user_name" value="" placeholder="이름을 입력하세요.">
+            </div>
+
+
+            <!-- 프로필사진 -->
+            <div class="form-group">
+                <label for="user_file" class="form-txt">프로필사진</label>
+                <input type="file" id="user_file" name="user_file" value="">
+            </div>
+
+
+            <!-- 주소 -->
+            <div class="form-group">
+            <label for="user_add" class="form-txt">주소</label>
+            <input type="text" id="user_add" name="user_add" placeholder="우편번호를 입력하세요.">
+            <button type="button">우편번호찾기</button><br>
+            <input type="text" name="user_add2" class="txt-add" placeholder="주소를 입력하세요.">
+            </div>
+
+
+            <!-- 통신사선택 -->
+            <div class="form-group">
+                <label class="form-txt">이동통신사</label>
+                <select name="user_tel">
+                    <option value="" selected>통신사선택</option>
+                    <option value="sk">SKT</option>
+                    <option value="kt">KT</option>
+                    <option value="lg">LGU+</option>
+                    <option value="et">기타</option>
+                </select>
+            </div>
+
+
+            <!-- 나이 -->
+            <div class="form-group">
+                <span class="form-txt">나이</span>
+                <label for="user_age10">10대</label>
+                <input  type="radio" id="user_age10" name="user_age" value="10" checked>
+                <label for="user_age20">20대</label>
+                <input  type="radio" id="user_age20" name="user_age" value="20">
+                <label for="user_age30">30대</label>
+                <input  type="radio" id="user_age30" name="user_age" value="30">
+                <label for="user_age40">40대</label>
+                <input  type="radio" id="user_age40" name="user_age" value="40">
+                <label for="user_age_et">기타</label>
+                <input  type="radio" id="user_age_et" name="user_age" value="기타">
+            </div>
+
+
+
+            <!-- 취미 -->
+            <div class="form-group">
+                <span class="form-txt">취미</span>
+                <label for="user_book">독서</label>
+                <input type="checkbox" id="user_book" name="user_book" value="book">
+                <label for="user_music">음악</label>
+                <input type="checkbox" id="user_music" name="user_music" value="music">
+                <label for="user_trip">여행</label>
+                <input type="checkbox" id="user_trip" name="user_trip" value="trip">
+                <label for="user_movie">영화</label>
+                <input type="checkbox" id="user_movie" name="user_movie" value="movie">
+                <label for="user_coding">코딩</label>
+                <input type="checkbox" id="user_coding" name="user_coding" value="coding">
+                <label for="user_et">기타</label>
+                <input type="checkbox" id="user_et" name="user_et" value="et" checked>
+            </div>
+
+            <!-- 자기소개 -->
+            <div class="form-group">
+                <label class="form-txt txt-1">자기소개</label>
+                <textarea></textarea>
+            </div>
+
+
+
+            <!-- 등록&초기화버튼 -->
+            <div class="btn-area">
+                <button type="submit">등록</button>
+                <button type="reset">초기화</button>
+            </div>
+        </form>
+        </div>
+    </body>
+
+</html>

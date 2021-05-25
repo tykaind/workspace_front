@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+            div {
+                background-color: #ff0000;
+            }
+
+            .bg-img {
+                width: 3000px;
+                height: 1000px;
+                background-image: url(./img/back_img01.jpg);
+                /* background-repeat: repeat; */ /* div안에 크기만큼 반복 */
+                /* background-size: contain; */
+                background-repeat: no-repeat;
+                background-position: center bottom ;
+
+                background-attachment: fixed; /* *배경화면 고정 중요! */
+            }
+
+            .bg-img2 {
+                width: 3000px;
+                height: 1000px;
+                background: #022250 url(./img/flower.jpg)  no-repeat fixed center center;
+            }
+
+            .bg-img3 {
+                width: 3000px;
+                height: 1000px;
+                background: #7da7d9 url(./img/back_img02.jpg) repeat-y fixed center bottom;
+                            /*배경색 - 이미지 -반복 - 고정 가로위치 세로위치  */
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            a<img src="./img/back_img01.jpg">
+        </div><br>
+
+        <div class="bg-img3">
+            b
+            <img src="./img/jung.jpg">
+        </div>
+        
+
+    </body>
+
+</html>

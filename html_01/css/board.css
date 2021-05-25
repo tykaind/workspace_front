@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* 초기 마진 패딩값초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0px;
+    padding: 0px;
+    font-family: "맑은 고딕", "돋음";
+    font-size: 12px;
+}
+/* 게시판 묶기 */
+#board {
+    width: 700px;
+}
+
+/* label {
+    display: inline-block;
+    width: 80px;
+} */
+
+.form-txt {
+    display: inline-block;
+    width: 80px;
+}
+
+#sel-board {
+    width: 200px;
+}
+
+#txt-title {
+    width: 600px;
+    padding: 5px 5px 5px 5px;
+}
+
+.form-group {
+    padding: 5px 0px 5px 0px;
+}
+
+#txt-password {
+    width: 200px;
+}
+
+input[type="radio"] {
+    margin: 0px 10px 0px 0px;
+}
+
+input[type="checkbox"] {
+    margin: 0px 10px 0px 0px;
+}
+
+#txt-ar {
+    width: 686px;
+    height: 200px;
+}
+
+.btn-area {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+}
+button {
+    width: 70px;
+    padding: 3px 3px 3px 3px;
+    background-color: #fff;
+}
